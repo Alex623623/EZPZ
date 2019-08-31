@@ -8,23 +8,23 @@ include ("config.php");
 	
 		<ul>
 			<li>
-			 <?php echo '<img  class="logo" src="http://localhost:8888/AUTO/images/EZPZlogo.png"/>'; ?></a> </li>
-			<!-- <li><img class="logo"src="images/EZPZlogo.png" alt="logo"></li> -->
+			 <?php echo '<img  class="logo" src="http://localhost:8888/AUTO/images/logoSoloGray.png"/>'; ?></a> </li>
+			<!-- <li><img class="logo"src="images/logoSoloGray.png" alt="logo"></li> -->
 			<li class="current">
-				<p><a href="index.php"><?php echo $lang['Accueil'] ?></a></p></li>
+				<p><a href="/AUTO/index.php"><?php echo $lang['Accueil'] ?></a></p></li>
 			<li class="current">
 				<p><a href="#"><?php echo $lang['Nos formules'] ?></a></p>
 				<ul class="menu">
-						<li><a href="auto.php"><?php echo $lang['Boite Automatique'] ?></a></li>
-						<li><a href="manual.php"><?php echo $lang['Boite Manuelle'] ?></a></li>
-						<li><a href="code.php"><?php echo $lang['Code de la route'] ?></a></li>
+						<li><a href="/AUTO/auto.php"><?php echo $lang['Boite Automatique'] ?></a></li>
+						<li><a href="/AUTO/manual.php"><?php echo $lang['Boite Manuelle'] ?></a></li>
+						<li><a href="/AUTO/code.php"><?php echo $lang['Code de la route'] ?></a></li>
 				</ul></li>
 			<li class="current">
-				<p><a href="tarifs.php"><?php echo $lang['tarifs'] ?></a></li></p>
+				<p><a href="/AUTO/tarifs.php"><?php echo $lang['tarifs'] ?></a></li></p>
 			<li class="current">
-				<p><a href="partenairs.php"><?php echo $lang['nos services'] ?></a></li></p>
+				<p><a href="/AUTO/partenairs.php"><?php echo $lang['nos services'] ?></a></li></p>
 			<li class="current">
-				<p><a href="blog/index.php">Blog
+				<p><a href="/AUTO/blog/indexBlog.php">Blog
 					
 				</a></li></p>
 			<li class="flag">

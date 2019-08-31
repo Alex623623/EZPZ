@@ -1,6 +1,5 @@
 
-	<?php require_once 'includes/header.php'; 
-	require_once 'classes/entry.php';
+	<?php  require_once 'classes/entry.php';
 	if (isset($_POST['publishing'])) {
 		$entry = new Entry();
 		$entry->createNewFromPOST($_POST);
@@ -18,7 +17,7 @@
 							<article class="post">
 								<header>
 									<div class="title">
-										<h2><a href="#">Magna sed adipiscing</a></h2>
+										<h2><a href="#">Add POST</a></h2>
 										<p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p>
 									</div>
 								</header>
@@ -53,4 +52,4 @@
 
 					</div>
 					
-	<?php require_once 'includes/footer.php'; ?>
+	

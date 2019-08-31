@@ -821,9 +821,9 @@ table, th, td {
 }
 
 .logo{
-	width: 240px;
-	height: 110px;
-	margin-top: -16px;
+	width: 150px;
+	height: 90px;
+	
 	box-shadow: 15px 15px 15px 0 rgb(90, 82, 82);
 }
 	#nav {

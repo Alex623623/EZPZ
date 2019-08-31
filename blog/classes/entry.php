@@ -1,45 +1,49 @@
 <?php 
+ 
 class Entry {
-    private $id;
-    private $date;
-    private $author;
-    private $title;
-    private $excerpt;
-    private $content;
-    private $dbh;
-    private $error;
+    public $id;
+    public $date;
+    public $author;
+    public $title;
+    public $excerpt;
+    public $content;
+    public $dbh;
+    public $error;
     public function __construct() {
-        $this->dbh = new PDO("mysql:dbname=blogAuto;host=localhost;", 'root', '');
+        $this->dbh = new PDO("mysql:dbname=blogAuto;host=localhost;", 'blog', '');
     }
     public function createNew( $author, $title, $excerpt, $content ) {
-        $this->setByParams( -1, date("d.m.Y h:m"), $author, $title, $excerpt, $content);
+        $this->setByParams( -1, $author, $title, $excerpt, $content);
     }
     public function createNewFromPOST( $post ) {
-        //print_r($post);
+        print_r($post);
         $this->createNew(
             $post['entry_author'],
             $post['entry_title'],
             $post['entry_excerpt'],
             $post['entry_content']
         );
+       
     }
-    public function setByParams( $id, $date, $author, $title, $excerpt, $content ) {
+   
+
+    public function setByParams( $id, $author, $title, $excerpt, $content ) {
         if (strlen($author) == 0) {
             $this->id = -1;
         } else {
             $this->id = $id;
             $this->author = $author;
-            $this->date = $date;
+            // $this->date = $date;
             $this->title = $title;
             $this->excerpt = $excerpt;
             $this->content = $content;
         }
     }
     public function setByRow( $row ) {
-        //print_r($row);
+        // print_r($row);
         $this->setByParams (
             $row['entry_id'],
-            $row['entry_date'],
+            // $row['entry_date'],
             $row['entry_author'],
             $row['entry_title'],
             $row['entry_excerpt'],
@@ -50,21 +54,21 @@ class Entry {
         $this->dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $query = ' 
             INSERT INTO entries (
-                entry_author, entry_date, entry_excerpt, entry_title,
+                entry_author, entry_excerpt, entry_title,
                 entry_content)
             VALUES (
-                :entry_author, :entry_date, :entry_excerpt, :entry_title,
+                :entry_author, :entry_excerpt, :entry_title,
                 :entry_content);';
         $stmt = $this->dbh->prepare($query);
         $result = $stmt->execute(array(
             ':entry_author' => $this->author,
-            ':entry_date' => $this->date,
+            // ':entry_date' => $this->date,
             ':entry_excerpt' => $this->excerpt,
             ':entry_title' => $this->title,
             ':entry_content' => $this->content
         ));
         $this->error = $this->dbh->errorInfo();
-        //print_r($this->error);
+        print_r($this->error);
         $query = '  SELECT entry_id 
                     FROM entries 
                     WHERE entry_author= :entry_author 
@@ -75,9 +79,9 @@ class Entry {
             ':entry_author' => $this->author
         ));
         $this->error = $this->dbh->errorInfo();
-        //print_r($this->error);
+        print_r($this->error);
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
-        //print_r($row);
+        print_r($row);
         $this->id = $row['entry_id'];
         return $result;
     }
@@ -112,7 +116,7 @@ class Entry {
         ));
         return $result;
     }
-    private function validateString() {
+    public function validateString() {
         
     }
     /**
@@ -218,4 +222,5 @@ class Entry {
         return $this;
     }
 }
+echo "hi you again";
 ?>

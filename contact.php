@@ -42,7 +42,7 @@ if(isset($_POST['name']) && isset($_POST['email'])) {
  
    $name = $_POST['name'];
    $email = $_POST['email'];
-   $to = 'ezpzpermis@gmail.com';    
+   $to = 'd0894b3432efc47ef4ac6b85d2f11735';    
    $subject = "New client";
    $body = '<html>
 			 <body>
@@ -67,3 +67,4 @@ if(isset($_POST['name']) && isset($_POST['email'])) {
 }
 	
 ?>
+

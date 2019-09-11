@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Dopetrope by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<meta charset="utf-8" />
@@ -20,81 +15,67 @@
 
 	<!-- Main -->
 	<section id="main">
-		<div class="container">
-			
+		<div class="container">	
 			<header>
-				<h2>NOS FORMULES</h2>
+				<h2><?php echo $lang['tarifsEtpay'] ?></h2>
 			</header>
 		<TAble class = "prices">
-			<CAption>BOITE AUTOMATIQUE</CAption>
+			<CAption> <?php echo $lang['Boite Automatique'] ?></CAption>
 			
 			<TR>
-				<TH>Lessons</TH>
-				<TH>1 PAIMENT</TH>
-				<TH>2 PAIMENTS</TH>
-				<TH>3 PAIMENTS</TH>
+				<TH><?php echo $lang['lessons'] ?></TH>
+				<TH>1 <?php echo $lang['paiment'] ?></TH>
+				<TH>2 <?php echo $lang['paiments'] ?></TH>
+				<TH>3 <?php echo $lang['paiments'] ?></TH>
 			</TR>
 			<TR>
-				<TD>*6 HEURES DE CONDUITE</TD>
+				<TD>*6 <?php echo $lang['heuresConduite'] ?></TD>
 				<TD>800 €</TD>
 				<TD>850 €</TD>
 				<TD>900 €</TD>
 			</TR>
 
 			<TR>
-				<TD>** 10 HEURES DE CONDUITE</TD>
+				<TD>** 10 <?php echo $lang['heuresConduite'] ?></TD>
 				<TD>1100 €</TD>
 				<TD>1150 €</TD>
 				<TD>1200 €</TD>
 			</TR>
 
 			<TR>
-				<TD>13 HEURES DE CONDUITE</TD>
+				<TD>13 <?php echo $lang['heuresConduite'] ?></TD>
 				<TD>1400 €</TD>
 				<TD>1450 €</TD>
 				<TD>1500 €</TD>
 			</TR>
 
-			<TR>
-				<TD>16 HEURES DE CONDUITE</TD>
-				<TD>1700 €</TD>
-				<TD>1750 €</TD>
-				<TD>1800 €</TD>
-			</TR>
 		</TAble>	
 		
 		<TAble class = "prices">
-			<CAption>BOITE MANUELLE</CAption>
+			<CAption><?php echo $lang['Boite Manuelle'] ?></CAption>
 			
 			<TR>
-			<TH>Lessons</TH>
-				<TH>1 PAIMENT</TH>
-				<TH>2 PAIMENTS</TH>
-				<TH>3 PAIMENTS</TH>
+			<TH><?php echo $lang['lessons'] ?></TH>
+				<TH>1 <?php echo $lang['paiment'] ?></TH>
+				<TH>2 <?php echo $lang['paiments'] ?></TH>
+				<TH>3 <?php echo $lang['paiments'] ?></TH>
 			</TR>
 			<TR>
-				<TD>*6 HEURES DE CONDUITE</TD>
+				<TD>*6 <?php echo $lang['heuresConduite'] ?></TD>
 				<TD>750 €</TD>
 				<TD>800 €</TD>
 				<TD>850 €</TD>
 			</TR>
 
 			<TR>
-				<TD>** 10 HEURES DE CONDUITE</TD>
-				<TD>1000 €</TD>
-				<TD>1050 €</TD>
-				<TD>1100 €</TD>
-			</TR>
-
-			<TR>
-				<TD>** 13 HEURES DE CONDUITE</TD>
+				<TD>** 13 <?php echo $lang['heuresConduite'] ?></TD>
 				<TD>1300 €</TD>
 				<TD>1350 €</TD>
 				<TD>1400 €</TD>
 			</TR>
 
 			<TR>
-				<TD>20 HEURES DE CONDUITE</TD>
+				<TD>20 <?php echo $lang['heuresConduite'] ?></TD>
 				<TD>1800 €</TD>
 				<TD>1850 €</TD>
 				<TD>1900 €</TD>
@@ -104,90 +85,72 @@
 				
 	<section class ="tableDesc">
 
-		<h3>Moyen de paiment</h3>
-		<p>
-			Se possible de payer en 2 ou 3 fois par cheque uniquement.
-		</p>
-		<p>
-	  		Paiment en 2 fois, le premier paiment avant partir, le deuxieme le mois suivant.
-		</p>
-		<p>
-			Paiment en 3 fois, voir la table suivante</p>
+		<h3><?php echo $lang['Moyen de paiment'] ?></h3>
+		<p><?php echo $lang['Se possible de payer en 2 ou 3 fois par cheque uniquement'] ?></p>
+		<p><?php echo $lang['Paiment en 2 fois'] ?></p>
+		<p><?php echo $lang['Paiment en 3 fois'] ?></p>
 	</section>
 	
 	<section>
 
 	<TAble class = "prices">
 
-	<CAption>BOITE AUTOMATIQUE en trois mensualités</CAption>
+	<CAption><?php echo $lang['Boite Automatique'] ?>  <?php echo $lang['en trois mensualités'] ?> </CAption>
 			
 			<TR>
-			<TH>Lessons</TH>
-				<TH>1 mensualité</TH>
-				<TH>2 mensualités</TH>
-				<TH>3 mensualités</TH>
+			<TH><?php echo $lang['lessons'] ?></TH>
+				<TH>1 <?php echo $lang['mensualité'] ?></TH>
+				<TH>2 <?php echo $lang['mensualité'] ?></TH>
+				<TH>3 <?php echo $lang['mensualité'] ?></TH>
 			</TR>
 			<TR>
-				<TD>*6 HEURES DE CONDUITE</TD>
+				<TD>*6 <?php echo $lang['heuresConduite'] ?></TD>
 				<TD>450 €</TD>
 				<TD>225 €</TD>
 				<TD>225 €</TD>
 			</TR>
 
 			<TR>
-				<TD>** 10 HEURES DE CONDUITE</TD>
+				<TD>** 10 <?php echo $lang['heuresConduite'] ?></TD>
 				<TD>600 €</TD>
 				<TD>300 €</TD>
 				<TD>300 €</TD>
 			</TR>
 
 			<TR>
-				<TD>** 13 HEURES DE CONDUITE</TD>
+				<TD>** 13 <?php echo $lang['heuresConduite'] ?></TD>
 				<TD>750 €</TD>
 				<TD>375 €</TD>
 				<TD>375 €</TD>
 			</TR>
 
-			<TR>
-				<TD>16 HEURES DE CONDUITE</TD>
-				<TD>900 €</TD>
-				<TD>450 €</TD>
-				<TD>450 €</TD>
-			</TR>
 		</TAble>	
 	
 		<TAble class = "prices">	
-			<CAption>BOITE MANUELLE en trois mensualités</CAption>
+			<CAption><?php echo $lang['Boite Manuelle'] ?>  <?php echo $lang['en trois mensualités'] ?> </CAption>
 			
 			<TR>
-			<TH>Lessons</TH>
-				<TH>1 mensualité</TH>
-				<TH>2 mensualités</TH>
-				<TH>3 mensualités</TH>
+			<TH><?php echo $lang['lessons'] ?></TH>
+				<TH>1 <?php echo $lang['mensualité'] ?></TH>
+				<TH>2 <?php echo $lang['mensualité'] ?></TH>
+				<TH>3 <?php echo $lang['mensualité'] ?></TH>
 			</TR>
 			<TR>
-				<TD>*6 HEURES DE CONDUITE</TD>
+				<TD>*6 <?php echo $lang['heuresConduite'] ?></TD>
 				<TD>400 €</TD>
 				<TD>225 €</TD>
 				<TD>225 €</TD>
 			</TR>
 
 			<TR>
-				<TD>** 10 HEURES DE CONDUITE</TD>
-				<TD>550 €</TD>
-				<TD>275 €</TD>
-				<TD>275 €</TD>
-			</TR>
-
-			<TR>
-				<TD>** 13 HEURES DE CONDUITE</TD>
+				<TD>** 13 <?php echo $lang['heuresConduite'] ?></TD>
 				<TD>700 €</TD>
 				<TD>350 €</TD>
 				<TD>350 €</TD>
 			</TR>
 
 			<TR>
-				<TD>20 HEURES DE CONDUITE</TD>
+				<TD>20 <?php echo $lang['heuresConduite'] ?></TD>
 				<TD>950 €</TD>
 				<TD>475 €</TD>
 				<TD>475 €</TD>

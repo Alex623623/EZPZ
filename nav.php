@@ -8,7 +8,7 @@ include ("config.php");
 	
 		<ul>
 			<li>
-			 <?php echo '<img  class="logo" src="http://localhost:8888/AUTO/images/logoSoloGray.png"/>'; ?></a> </li>
+			 <?php echo '<img  class="logo" src="http://localhost:8888/AUTO/images/mylogo.jpg"/>'; ?></a> </li>
 			<!-- <li><img class="logo"src="images/logoSoloGray.png" alt="logo"></li> -->
 			<li class="current">
 				<p><a href="/AUTO/index.php"><?php echo $lang['Accueil'] ?></a></p></li>
@@ -24,12 +24,12 @@ include ("config.php");
 			<li class="current">
 				<p><a href="/AUTO/partenairs.php"><?php echo $lang['nos services'] ?></a></li></p>
 			<li class="current">
-				<p><a href="/AUTO/blog/indexBlog.php">Blog
+				<p><a href="/AUTO/avis/indexAvis.php">avis
 					
 				</a></li></p>
 			<li class="flag">
-				<a href="index.php?lang=en"><img src="images/united-kingdom-flag-button-square-icon-64.png" alt="ENGLISH VERSION"></a>
-				<a href="index.php?lang=fr"><img src="images/france-flag-3d-icon-64.png" alt="FRENCH VERSION"></a>
+				<a href="index.php?lang=en"><img src="/AUTO/images/united-kingdom-flag-button-square-icon-64.png" alt="ENGLISH VERSION"></a>
+				<a href="index.php?lang=fr"><img src="/AUTO/images/france-flag-3d-icon-64.png" alt="FRENCH VERSION"></a>
 			</li>
 		</ul>
 	</nav>

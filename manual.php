@@ -10,85 +10,64 @@
 	<body class="right-sidebar is-preload">
 		<div id="page-wrapper">
 
-			<!-- Header -->
-				<section id="header">
+		<!-- Header -->
+		<section id="header">
+			<?php include("nav.php");?>
+		</section>
 
-					<?php include("nav.php");?>
+		<!-- Main -->
+		<section id="main">
+			<div class="container">
+				<div class="row">
+					<div class="col-8 col-12-medium">
+		<!-- Content -->
+					<article class="box post">
+					<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+					<header>
+							<h2><?php echo $lang['Boîte de vitesse manuelle'] ?></h2>
+						<p><?php echo $lang['Nos formules'] ?></p>
+					</header>
+					<section>
+						<h3><?php echo $lang['Cours de rattrapage (6 heures de conduite)'] ?></h3>
+						<ul><p> <?php echo $lang['Pré-requis'] ?> </p>
+							<li><?php echo $lang['liOneAu'] ?> </li>
+							<li> <a href="code.php"><?php echo $lang['liTwoAu'] ?> </a></li>
+							<li> <a href="code.php"><?php echo $lang['liThreeAu'] ?></a></li>
+							<li><?php echo $lang['liFourAu'] ?></li>	
+						</ul>				
+						<p>	<?php echo $lang['text6heures'] ?></p>
+						<ul><?php echo $lang['AccueilPackage'] ?>	
+						</ul>
+						<a href="tarifs.php" class="button alt">750 euros</a>
+					</section>
 
-				</section>
-
-			<!-- Main -->
-				<section id="main">
-					<div class="container">
-						<div class="row">
-							<div class="col-8 col-12-medium">
-
-								<!-- Content -->
-								<article class="box post">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-								<header>
-									<h2>Permis en boite manuelle</h2>
-									<p>Nos packages</p>
-								</header>
-								<h3>Cours de rattrapage (6 heures de conduite)</h3>
-								<p> Pres requis
-									<ul>
-										<li>
-										 Avoir un premier passage à l'examen ou au moins 7 heures de conduite dans une auto-école.   
-										</li>
-										<li> <a href="code.php">Avoir le code de la route encore valable </a>
-										</li>
-										<li> <a href="code.php">Avoir récupéré son dossier (Cerfa 02)</a>
-										</li>
-										<li>
-										Avoir des bases solides en conduite en boite manuelle ou automatique
-										</li>	
-									</ul>
-								</p>
-								<p>
-								Cette formule s'adresse aux personnes qui sont déjà passées par une autre auto-école et voudraient repasser facilement et rapidement l'examen.
-								</p>
+					<section>
+						<h3><?php echo $lang['13heures'] ?></h3>
+						<ul> <?php echo $lang['Pré-requis'] ?>
+							<li><?php echo $lang['permisEtrangere'] ?></li>
+							<li> <a href="code.php"><?php echo $lang['liTwoAu'] ?> </a></li>
+							<li> <a href="code.php"><?php echo $lang['liThreeAu'] ?></a></li>
+							<li><?php echo $lang['liFourAu'] ?></li>		
+						</ul>
+						<p> <?php echo $lang['text10heures'] ?></p>
+						<ul>
+							<li><?php echo $lang['AccueilPackage'] ?></li>
+						</ul>
+						<a href="#" class="button alt">1300 euros</a>
+					</section>
 								
-								<section>
-									<header>
-										<h3>10 heures de conduite (possible avec un permis étranger uniquement)</h3>
-									</header>
-									<p> Pré-requis
-									<ul>
-										<li>
-										 Avoir un permis étranger (même si non valable en France)   
-										</li>
-										<li> <a href="code.php">Avoir le code de la route encore valable </a>
-										</li>
-										<li> <a href="code.php">Avoir récupéré son dossier (Cerfa 02)</a>
-										</li>
-										<li>
-										Avoir des bases solides en conduite en boite automatique ou manuelle
-										</li>	
-									</ul>
-								</p>
-								<p>
-									Cette formule s'adresse notamment aux personnes installées en France qui ont une expérience de conduite et qui souhaite obtenir le permis de conduire français.
-								</p>
-								</section>
-								
-								<section>
-									<header>
-										<h3>Boite auto (13 heures de conduite)</h3>
-									</header>
-									<p> Pré-requis
-									<ul>	
-									<li> <a href="code.php">Avoir le code de la route encore valable </a>
-									</li>
-									<li> <a href="code.php">Avoir récupéré son dossier (Cerfa 02)</a>
-									</li>
-									</ul>
-								</p>
-									<p>
-										Cette formule s'adresse à tout le monde, c'est le cas classique, les heures minimum pour passe son permis de conduire en boite manuelle.
-									</p>
-								</section>
-							</article>
+					<section>
+						<h3><?php echo $lang['20heures'] ?></h3>
+						<ul><?php echo $lang["Pré-requis"] ?>
+							<li> <a href="code.php"><?php echo $lang['liTwoAu'] ?> </a></li>
+							<li> <a href="code.php"><?php echo $lang['liThreeAu'] ?></a></li>
+						</ul>
+						<p><?php echo $lang['text13heures'] ?>
+						<ul><?php echo $lang['AccueilPackage'] ?>
+						</ul>
+						<a href="#" class="button alt">1800 euros</a>
+					</section>
+				</article>
 
 							</div>
 							<div class="col-4 col-12-medium">
